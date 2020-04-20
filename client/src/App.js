@@ -3,14 +3,13 @@ import PlayerCard from "./Components/PlayerCard";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-class App extends React.Component {
-  render() {
-    console.log("rendering");
-    return (
-      <div className="Container">
-        <PlayerCard />
-      </div>
-    );
-  }
+function App() {
+  // Similar to useState but first arg is key to the value in local storage
+
+  return (
+    <div>
+      <PlayerCard />
+    </div>
+  );
 }
 export default App;

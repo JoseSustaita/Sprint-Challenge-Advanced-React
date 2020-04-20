@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-
+import Header from "./Header";
 class PlayerCard extends React.Component {
   constructor() {
     super();
@@ -21,6 +21,7 @@ class PlayerCard extends React.Component {
     return (
       <div className="App">
         <h1>Players</h1>
+        <Header />
         <div className="Player-container">
           {this.state.PlayerData.map((Player) => {
             return (
