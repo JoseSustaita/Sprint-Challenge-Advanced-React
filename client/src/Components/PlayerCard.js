@@ -28,10 +28,12 @@ class PlayerCard extends React.Component {
               <Card style={{ width: "18rem" }}>
                 <Card.Body>
                   <Card.Title>{Player.name}</Card.Title>
-                  <Card.Text>
-                    Country: {Player.country}
-                    Searches: {Player.searches}
-                  </Card.Text>
+                  <div data-testid="Country">
+                    <Card.Text>
+                      Country: {Player.country}
+                      Searches: {Player.searches}
+                    </Card.Text>
+                  </div>
                 </Card.Body>
               </Card>
             );
