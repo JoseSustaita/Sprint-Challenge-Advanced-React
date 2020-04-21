@@ -23,21 +23,19 @@ class PlayerCard extends React.Component {
         <h1>Players</h1>
         <Header />
         <div className="Player-container">
-          {this.state.PlayerData.map((Player) => {
-            return (
-              <Card style={{ width: "18rem" }}>
-                <Card.Body>
-                  <Card.Title>{Player.name}</Card.Title>
-                  <div data-testid="Country">
-                    <Card.Text>
-                      Country: {Player.country}
-                      Searches: {Player.searches}
-                    </Card.Text>
-                  </div>
-                </Card.Body>
-              </Card>
-            );
-          })}
+          {this.state.PlayerData.map((Player) => (
+            <Card style={{ width: "18rem" }}>
+              <Card.Body>
+                <Card.Title>{Player.name}</Card.Title>
+                <div data-testid="Country">
+                  <Card.Text>
+                    Country: {Player.country}
+                    Searches: {Player.searches}
+                  </Card.Text>
+                </div>
+              </Card.Body>
+            </Card>
+          ))}
         </div>
       </div>
     );
